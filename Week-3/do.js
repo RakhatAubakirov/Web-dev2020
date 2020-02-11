@@ -26,7 +26,7 @@ function addElement(toDo, id) {
                     <label class="label"> ${toDo}</label>
                     <span class="delete-icon" job="delete" id="${id}"></span>
                 </li>`
-    const position = 'beforeend'
+    const position = 'afterend'
     list.insertAdjacentHTML(position, text);
 }
 
@@ -44,10 +44,12 @@ function pressBtn() {
     if(toDo) {
         addElement(toDo, id);
         id++;
-    }else {
-        alert('Input is empty');
-    }
-    input.value = '';
+     }else {
+        addElement(toDo, id);
+        id++;
+         //alert('Input is empty');
+     }
+     input.value = '';
 }
 
 list.addEventListener('click', function(event){
