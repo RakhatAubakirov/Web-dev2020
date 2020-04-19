@@ -1,0 +1,96 @@
+footer{
+	width: 100%;
+	height: auto;
+	background: white;
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+footer a{
+	color: black;
+	font-size: 14px;
+
+}
+img{
+	height: 26.77px;
+	width: 25.67px;
+}
+
+.follow{
+	float: left;
+	width: 33%;
+	text-align: center;
+}
+
+.subscribe{
+	float: right;
+	width: 33%;
+	text-align: center;
+}
+
+.links{
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+}
+
+.email{
+	display: block;
+	width: 100%;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 0;
+    transition: padding .25s ease-out;
+    margin-bottom: 200px;
+
+}
+
+.footer-par{
+	text-align: center;
+	width:50%;
+	margin-left: 330px;
+}
+
+.email-footer{
+	margin: 2.85714rem 0 0;
+    margin-top: 2.85714rem;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    text-align: center;
+    margin: auto;
+
+}
+form{
+
+  /* This bit sets up the horizontal layout */
+  display:flex;
+  flex-direction:row;
+  text-align: center;
+  margin: auto;
+  }
+
+
+
+input{
+
+	margin-right: auto;
+	margin-left: auto;
+	height: 60px;
+	margin: 0 auto;
+    max-width:360px;
+    width: 100%;
+}
+
+.footer-email-submit{
+	display: block;
+}
+
+
+
+input[type="submit"] {
+    margin-left: -50px;
+    height: 20px;
+    width: 50px;
+}
