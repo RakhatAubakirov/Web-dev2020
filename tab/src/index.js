@@ -1,17 +1,33 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { render } from "react-dom";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import Tabs from './tab/Tabs';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+
+
+require('./styles.css');
+
+function App() {
+  return (
+    <div class="wrapper">
+      <h1>Tabs App//Web</h1>
+      <Tabs>
+        <div label="Active">
+        
+        </div>
+        <div label="Default">
+        </div>
+        <div label="Default">
+        </div>
+      </Tabs>
+    </div>
+  );
+}
+
+
+
+const container = document.createElement('div');
+document.body.appendChild(container);
+render(<App />, container);
+
